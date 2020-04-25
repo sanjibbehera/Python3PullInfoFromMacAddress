@@ -26,7 +26,7 @@ Usage
         Usage on a Linux VM:
           python server.js -a 44:38:39:ff:ef:57 -t <API_TOKEN>
         Usage on a Docker Host:
-          docker run -it <DOCKER IMAGE NAME> -a 44:38:39:ff:ef:57 -t <API_TOKEN>
+          docker run -it <DOCKER IMAGE NAME> 44:38:39:ff:ef:57 <API_TOKEN>
 
 
 Steps to execute the code in normal Linux VM.
