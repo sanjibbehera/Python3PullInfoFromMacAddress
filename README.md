@@ -27,3 +27,35 @@ Usage
           python server.js -a 44:38:39:ff:ef:57 -t <API_TOKEN>
         Usage on a Docker Host:
           docker run -it <DOCKER IMAGE NAME> -a 44:38:39:ff:ef:57 -t <API_TOKEN>
+
+
+Steps to execute the code in normal Linux VM.
+
+    Below is the example, how to retrieve the Company info by providing MAC Address in command line. 
+    How to run this program in Linux Server.  
+        Pre-requisite:  
+            Python3, pip3 & GIT must be installed in the Linux environment and access to Internet is a must. 
+            Download the Git Repo from GITHUB using the below URL.  
+            git clone https://github.com/sanjibbehera/Python3PullInfoFromMacAddress.git
+            cd Python3PullInfoFromMacAddress; pip install requests
+            python server.js -a 44:38:39:ff:ef:57 -t <API_TOKEN>
+            
+            If we do not provide any arguments, below Error can be seen.  
+                Invalid argument provided, pass MAC address & the API_TOKEN as parameter to the program!! 
+                Proper Example is: python server.js -a 44:38:39:ff:ef:57 -t <API_TOKEN>
+
+Steps to execute the code in normal Docker Host.
+
+    How to run this program in Docker Host.  
+        Pre-requisite:  
+            Docker & GIT must be installed in the Unix environment and access to Docker Hub is a must.  
+            Download the Git Repo from GITHUB using the below URL.   
+            git clone https://github.com/sanjibbehera/Python3PullInfoFromMacAddress.git
+            
+        Execute the below 2 command steps to run as Dockerized Container.
+            cd Python3PullInfoFromMacAddress; docker build -t pyapps .  
+            docker run -it pyapps 44:38:39:ff:ef:57 <API_TOKEN>
+            
+        Output of the Program for a valid Mac Address should look like below:-
+            Vendor Details of the provided MAC Address <44:38:39:ff:ef:57> is: Cumulus Networks, Inc 
+            having Address: 650 Castro Street, suite 120-245 Mountain View CA 94041 US
